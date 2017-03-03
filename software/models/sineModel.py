@@ -210,6 +210,7 @@ def sineModelMultiRes(x, fs, [w1, w2, w3], [N1, N2, N3], t, [B1, B2, B3]):
 		ploc2 = UF.peakDetection(mX2, t)                        # detect locations of peaks
 		ploc3 = UF.peakDetection(mX3, t)                        # detect locations of peaks                
 
+
                 pfreq1 = fs * ploc1 / float(N1)                      # Find a frequency for bandlimiting
                 pfreq2 = fs * ploc2 / float(N2)                      # Find a frequency for bandlimiting
                 pfreq3 = fs * ploc3 / float(N3)                      # Find a frequency for bandlimiting
